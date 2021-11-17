@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PersonMoving : MonoBehaviour
 {
-    private float speed = 0.01f;
+    public const float speed = 0.01f;
     private GameObject camera;
     private int childIndexForMove = 0;
     private int lastChildIndex = 0;

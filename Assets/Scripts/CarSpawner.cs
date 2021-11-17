@@ -13,7 +13,7 @@ public class CarSpawner : MonoBehaviour
         if (spawn)
         {
             spawn = false;
-            Invoke(nameof(SpawnCar), 5);
+            Invoke(nameof(SpawnCar), Random.Range(4, 6));
         }
     }
 
