@@ -11,6 +11,7 @@ public class MenuScript : MonoBehaviour
     public Button music;
     public GameObject musicText;
     public Text sealText;
+    public Button about;
 
     private string sceneForPlay = "SampleScene";
     private bool musicOn = false;
@@ -25,8 +26,14 @@ public class MenuScript : MonoBehaviour
 
         play.onClick.AddListener(PlayClick);
         music.onClick.AddListener(MusicClick);
+        about.onClick.AddListener(AboutClick);
     }
 
+    private void AboutClick()
+    {
+        SceneManager.LoadScene("AboutScene");
+    }
+    
     private void MusicClick()
     {
         musicOn = !musicOn;
